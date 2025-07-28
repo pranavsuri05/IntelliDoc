@@ -11,8 +11,8 @@ The solution follows a clean, modular, and multi-stage pipeline:
 
 pdf_parser.py      →      title_detector.py      →      heading_detector.py      →      hierarchy_fixer.py
   
-(Parse text               (Detect centered               (Identify heading                  (Fix levels,
- & font info)             title on page 1)               styles & assign H1–H3)           enforce order)
+[Parse text               [Detect centered               [Identify heading                  [Fix levels,
+ & font info]             title on page 1]               styles & assign H1–H3]           enforce order]
 
 </pre>
 Each module is laser-focused on a specific task:
