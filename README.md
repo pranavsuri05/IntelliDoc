@@ -41,6 +41,8 @@ Each module is laser-focused on a specific task:
 
 The solution is containerized with Docker and has no external network dependencies at runtime.
 
+### **->Input file & Output file already provided**
+To demonstrate how our app works with the model, we’ve included a sample input file along with its corresponding output file.
 ### **->Build the Docker Image**
 
 Use the following command from the root of the project directory:
