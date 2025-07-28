@@ -39,26 +39,22 @@ Each module is laser-focused on a specific task:
 
 ## How to Build and Run
 
-The solution is containerized with Docker and runs entirely offline for security and compliance.
+The solution is containerized with Docker and has no external network dependencies at runtime.
 
-### **→ Build the Docker Image**
+### **->Build the Docker Image**
 
-From the root of the project, run:
+Use the following command from the root of the project directory:
 
+```bash
+docker build --platform linux/amd64 -t mysolution:latest .
 ```
-docker build --platform linux/amd64 -t mysolution .
-```
 
-→ Run the Container
+### **->Run the Container**
 
-Ensure the following:
-	•	PDFs and a config.json file are placed in the input/ folder
-	•	The output/ folder is empty and ready to receive results <br>
- Run the container using:
- ```
- docker run --rm \
-  -v $(pwd)/input:/app/input \
-  -v $(pwd)/output:/app/output \
-  --network none \
-  mysolution
+**To process PDFs, place them in the `input` directory. The container will automatically process all PDFs and place the corresponding JSON files in the `output` directory.**
+
+Use the following command to run the container, replacing `$(pwd)` with the absolute path to your project directory if you are not using a Unix-like shell.
+
+```bash
+docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none mysolution:latest
 ```
