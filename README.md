@@ -53,7 +53,7 @@ docker build --platform linux/amd64 -t mysolution:latest .
 
 ### **->Run the Container**
 
-To process PDFs, place them in the `input` directory. The container will automatically process all PDFs and place the corresponding JSON files in the `output` directory.
+**To process PDFs, place them in the `input` directory. The container will automatically process all PDFs and place the corresponding JSON files in the `output` directory.**
 
 Use the following command to run the container, replacing `$(pwd)` with the absolute path to your project directory if you are not using a Unix-like shell.
 
