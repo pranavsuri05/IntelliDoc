@@ -1,7 +1,7 @@
 # Adobe Hackathon 2025 - PDF Outlining Solution
 
 This project is a solution for Challenge 1a, designed to extract a structured title and outline from PDF documents and output them as JSON files. <br>
-**This solution is fully heuristics-based, lightweight, and deterministic — no black-box ML, just logic.**
+**This solution is fully heuristics based, lightweight, and deterministic. Built entirely on good logic and clean design** 
 
 ## Approach
 
@@ -21,7 +21,7 @@ Each module is laser-focused on a specific task:
   Extracts all text blocks using `PyMuPDF`. Adds metadata: font size, name, position, column/box flags. Also determines the dominant body font style.
 
 -  **title_detector.py**  
-  Identifies the document title by selecting large, centered, uncommon text on the first page. Handles multi-line titles gracefully.
+  Identifies the document title by selecting large, centered, uncommon text on the first page. Handles multiline titles gracefully.
 
 -  **heading_detector.py**  
   Detects headings by checking for stylistic differences (e.g. bold, larger fonts). Assigns hierarchy levels H1, H2, H3 based on font ranks.
