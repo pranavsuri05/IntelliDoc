@@ -30,6 +30,8 @@ Each module is laser-focused on a specific task:
 
 => This step-by-step architecture ensures robust handling of even messy or unstructured PDFs.
 
+
+
 ## Models and Libraries Used
 
 * **Language:** Python 3.9  
@@ -37,7 +39,11 @@ Each module is laser-focused on a specific task:
 
 * **No models**, no external dependencies, no cloud APIs and no external libararies used.
 
-### **Build the Docker Image**
+## How to Build and Run
+
+The solution is containerized with Docker and has no external network dependencies at runtime.
+
+### **->Build the Docker Image**
 
 Use the following command from the root of the project directory:
 
@@ -45,7 +51,7 @@ Use the following command from the root of the project directory:
 docker build --platform linux/amd64 -t mysolution:latest .
 ```
 
-### **Run the Container**
+### **->Run the Container**
 
 To process PDFs, place them in the `input` directory. The container will automatically process all PDFs and place the corresponding JSON files in the `output` directory.
 
