@@ -53,18 +53,18 @@ mkdir input output
 How to Build and Run
 The solution is containerized with Docker and has no external network dependencies at runtime.
 
--> Note for the submission:<br>
+### 2. Note for the submission:<br>
 Create input and output folder as github doesnt allow empty folders so couldnt add it :(
 <br>
 Input file & Output file already provided for 1B
 To demonstrate how our app works with the model, we’ve included a sample input file along with its corresponding output file.
 <br>
-->Build the Docker Image
+### 3. Build the Docker Image
 Use the following command from the root of the project directory:
 ```
 docker build --platform linux/amd64 -t mysolution:latest .
 ```
-->Run the Container
+### 4. Run the Container
 To process PDFs, place them in the input directory. The container will automatically process all PDFs and place the corresponding JSON files in the output directory.
 
 Use the following command to run the container, replacing $(pwd) with the absolute path to your project directory if you are not using a Unix-like shell.
