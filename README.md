@@ -1,6 +1,6 @@
-# 📄 Adobe Hackathon 2025 – Team Bareozgarians ;)
+# 📄 IntelliDoc: AI-Powered PDF Structure and Relevance Extracto;)
 
-This repo contains solutions for both challenges in Adobe Hackathon 2025:
+This repo contains solutions for two problems that I solved:
 
 - **Challenge 1a**: Extracts a structured outline (title, H1–H3) from PDFs.
 - **Challenge 1b**: Extracts semantically relevant content based on a given persona.
