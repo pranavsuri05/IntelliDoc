@@ -1,4 +1,4 @@
-# Adobe Hackathon 2025 - PDF Outlining Solution
+# PDF Outlining Solution
 
 This project is a solution for Challenge 1a, designed to extract a structured title and outline from PDF documents and output them as JSON files.
 
