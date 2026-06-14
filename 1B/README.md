@@ -1,4 +1,4 @@
-Persona-Driven Document Intelligence Engine
+<h1>Persona-Driven Document Intelligence Engine</h1>
 
 This project is a solution for Challenge 1b, designed to extract and prioritize relevant information from PDFs based on a given persona and job-to-be-done.  
 **This solution combines structured parsing with semantic AI — offline, secure, and purpose-driven.**
